@@ -57,7 +57,7 @@ SOURCES = srcs/ft_memset.c \
 OBJECTS = $(SOURCES:.c=.o)
 
 
-all: clean so $(NAME)
+all: $(NAME)
 
 re: fclean all
 
@@ -65,10 +65,7 @@ $(NAME): $(OBJECTS)
 	ar rc $(NAME) $(OBJECTS)
 
 .c.o: $(SOURCES)
-	$(CC) -c -fPIC $(INC) $(CFLAGS) -o $@ $<
-
-so: $(OBJECTS)
-	gcc -shared $(OBJECTS) -o libft.so
+	$(CC) -c $(INC) $(CFLAGS) -o $@ $<
 
 clean:
 	rm -f $(OBJECTS)

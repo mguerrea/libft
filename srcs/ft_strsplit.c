@@ -8,6 +8,7 @@ static int count_words(char const *str, char c)
 
 	is_word = 0;
 	count = 0;
+	i = 0;
 	while (str[i])
 	{
 		if (str[i] != c && is_word == 0)

@@ -5,6 +5,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	unsigned int	i;
 	char			*str;
 
+	str = NULL;
     if (s)
     {
 		if(!(str = ft_strnew(ft_strlen((char *)s))))
