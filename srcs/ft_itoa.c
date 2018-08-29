@@ -37,7 +37,7 @@ char	*ft_itoa(int nb)
 		value = value / 10;
 		i++;
 	}
-	if (!(str = malloc(sizeof(char) * (i + 2))))
+	if (!(str = ft_strnew(i + 1)))
 		return (NULL);
 	if (lng < 0)
 	{
