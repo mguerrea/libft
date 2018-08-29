@@ -64,5 +64,6 @@ char		*ft_itoa(int nb);
 size_t		ft_strlcpy(char *dest, char *src, unsigned int size);
 
 void		ft_putchar_color(char c, char *color);
+void		ft_putstr_color(char *str, char *color);
 
 #endif
