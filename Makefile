@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mguerrea <mguerrea@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/08/30 16:49:08 by mguerrea          #+#    #+#              #
+#    Updated: 2018/08/30 16:49:08 by mguerrea         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 INC = -Iincludes
@@ -56,7 +68,18 @@ SOURCES = srcs/ft_memset.c \
 		srcs/ft_putnbr_fd.c \
 		srcs/ft_putchar_color.c \
 		srcs/ft_putstr_color.c \
-		srcs/ft_itoa.c
+		srcs/ft_itoa.c \
+		srcs/ft_sanitol.c \
+		srcs/ft_max.c \
+		srcs/ft_min.c \
+		srcs/ft_lstnew.c \
+		srcs/ft_lstdelone.c \
+		srcs/ft_lstdel.c \
+		srcs/ft_lstadd.c \
+		srcs/ft_lstiter.c \
+		srcs/ft_lstmap.c \
+		srcs/ft_isupper.c \
+		srcs/ft_islower.c
 OBJECTS = $(SOURCES:.c=.o)
 
 

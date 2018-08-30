@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mguerrea <mguerrea@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/08/30 16:49:18 by mguerrea          #+#    #+#             */
+/*   Updated: 2018/08/30 16:49:18 by mguerrea         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
@@ -56,7 +68,7 @@ char		*ft_strsub(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strtrim(char const *s);
 char        **ft_strsplit(char const *s, char c);
-
+char		*ft_itoa(int nb);
 void		ft_putchar(char c);
 void		ft_putstr(const char *str);
 void		ft_putendl(char const *s);
@@ -66,7 +78,6 @@ void		ft_putstr_fd(const char *str, int fd);
 void		ft_putendl_fd(char const *s, int fd);
 void		ft_putnbr_fd(int nb, int fd);
 
-char		*ft_itoa(int nb);
 
 size_t		ft_strlcpy(char *dest, char *src, unsigned int size);
 
@@ -75,6 +86,8 @@ void		ft_putstr_color(char *str, char *color);
 void		ft_sanitol(char *str);
 int			ft_max(int a, int b);
 int			ft_min(int a, int b);
+int			ft_islower(char c);
+int			ft_isupper(char c);
 
 t_list		*ft_lstnew(void const *content, size_t content_size);
 void		ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
