@@ -55,6 +55,7 @@ SOURCES = srcs/ft_memset.c \
 		srcs/ft_putendl_fd.c \
 		srcs/ft_putnbr_fd.c \
 		srcs/ft_putchar_color.c \
+		srcs/ft_putstr_color.c \
 		srcs/ft_itoa.c
 OBJECTS = $(SOURCES:.c=.o)
 
