@@ -81,7 +81,8 @@ SOURCES = srcs/ft_memset.c \
 		srcs/ft_isupper.c \
 		srcs/ft_islower.c \
 		srcs/ft_list_to_str.c \
-		srcs/ft_lstaddback.c
+		srcs/ft_lstaddback.c \
+		srcs/ft_elemdel.c
 OBJECTS = $(SOURCES:.c=.o)
 
 

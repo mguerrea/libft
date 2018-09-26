@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdel.c                                        :+:      :+:    :+:   */
+/*   ft_elemdel.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mguerrea <mguerrea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/30 16:47:30 by mguerrea          #+#    #+#             */
-/*   Updated: 2018/09/26 15:47:11 by mguerrea         ###   ########.fr       */
+/*   Created: 2018/09/26 15:17:57 by mguerrea          #+#    #+#             */
+/*   Updated: 2018/09/26 15:21:35 by mguerrea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstdel(t_list **alst, void (*del)(void *, size_t))
+void    ft_elemdel(void *content, size_t content_size)
 {
-	if (*alst)
-	{
-		if ((*alst)->next)
-			ft_lstdel(&(*alst)->next, del);
-		ft_lstdelone(alst, del);
-	}
+    free(content);
+    content = NULL;
+    content_size = 0;
 }
