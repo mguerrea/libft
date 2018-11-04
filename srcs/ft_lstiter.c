@@ -6,7 +6,7 @@
 /*   By: mguerrea <mguerrea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/30 16:48:15 by mguerrea          #+#    #+#             */
-/*   Updated: 2018/08/30 16:48:29 by mguerrea         ###   ########.fr       */
+/*   Updated: 2018/11/04 18:44:16 by mguerrea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void    ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-    while (lst)
-    {
-        f(lst);
-        lst = lst->next;
-    }
+	while (lst)
+	{
+		f(lst);
+		lst = lst->next;
+	}
 }

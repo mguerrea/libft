@@ -6,7 +6,7 @@
 /*   By: mguerrea <mguerrea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/30 16:47:20 by mguerrea          #+#    #+#             */
-/*   Updated: 2018/08/30 16:47:23 by mguerrea         ###   ########.fr       */
+/*   Updated: 2018/11/04 18:43:46 by mguerrea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void    ft_lstadd(t_list **alst, t_list *new)
 {
-    new->next = *alst;
-    *alst = new;
+	new->next = *alst;
+	*alst = new;
 }

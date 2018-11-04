@@ -6,7 +6,7 @@
 /*   By: mguerrea <mguerrea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/30 16:49:37 by mguerrea          #+#    #+#             */
-/*   Updated: 2018/08/30 16:49:38 by mguerrea         ###   ########.fr       */
+/*   Updated: 2018/11/04 18:45:47 by mguerrea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int     ft_max(int a, int b)
 {
-    if (a >= b)
-        return (a);
-    return (b);
+	if (a >= b)
+		return (a);
+	return (b);
 }
