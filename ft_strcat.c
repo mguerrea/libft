@@ -6,11 +6,11 @@
 /*   By: mguerrea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/05 15:24:20 by mguerrea          #+#    #+#             */
-/*   Updated: 2018/11/05 15:24:38 by mguerrea         ###   ########.fr       */
+/*   Updated: 2018/11/25 12:41:27 by mguerrea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *dest, const char *src)
 {
 	int i;
 	int j;

@@ -6,13 +6,13 @@
 /*   By: mguerrea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/05 15:18:50 by mguerrea          #+#    #+#             */
-/*   Updated: 2018/11/05 15:19:21 by mguerrea         ###   ########.fr       */
+/*   Updated: 2018/11/25 12:38:15 by mguerrea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	int		i;
 	char	*copy;
