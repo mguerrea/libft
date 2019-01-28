@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_strmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mguerrea <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mguerrea <mguerrea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/05 15:10:12 by mguerrea          #+#    #+#             */
-/*   Updated: 2018/11/05 15:11:11 by mguerrea         ###   ########.fr       */
+/*   Created: 2018/11/05 15:11:49 by mguerrea          #+#    #+#             */
+/*   Updated: 2018/12/17 12:30:27 by mguerrea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmap(char const *s, char (*f)(char))
 {
 	unsigned int	i;
 	char			*str;
+	unsigned int	len;
 
 	str = NULL;
 	if (s)
@@ -23,8 +24,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		if (!(str = ft_strnew(ft_strlen((char *)s))))
 			return (NULL);
 		i = -1;
-		while (++i < ft_strlen((char *)s))
-			str[i] = f(i, s[i]);
+		len = ft_strlen((char *)s);
+		while (++i < len)
+			str[i] = f(s[i]);
 	}
 	return (str);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mguerrea <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mguerrea <mguerrea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/05 15:57:20 by mguerrea          #+#    #+#             */
-/*   Updated: 2018/11/25 12:48:33 by mguerrea         ###   ########.fr       */
+/*   Updated: 2018/12/21 21:12:02 by mguerrea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,9 @@ void				ft_putstr_color(char *str, char *color);
 void				ft_sanitol(char *str);
 int					ft_max(int a, int b);
 int					ft_min(int a, int b);
+void				ft_putstr_free(char *str);
+void				ft_putendl_free(char *str);
+int					ft_nbrlen(int nb);
 
 t_list				*ft_lstnew(void const *content, size_t content_size);
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
@@ -94,5 +97,7 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 char				*ft_list_to_str(t_list *list);
 void				ft_lstaddback(t_list **list, t_list *new);
 void				ft_elemdel(void *content, size_t content_size);
+int					ft_count_elem(t_list **list);
+t_list				*ft_lstlast(t_list *list);
 
 #endif

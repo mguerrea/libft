@@ -1,23 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdel.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mguerrea <mguerrea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/30 16:47:30 by mguerrea          #+#    #+#             */
-/*   Updated: 2018/11/05 15:56:30 by mguerrea         ###   ########.fr       */
+/*   Created: 2018/11/05 15:10:12 by mguerrea          #+#    #+#             */
+/*   Updated: 2018/12/17 12:29:26 by mguerrea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	if (*alst)
+	unsigned int	i;
+	char			*str;
+	unsigned int	len;
+
+	str = NULL;
+	if (s)
 	{
-		if ((*alst)->next)
-			ft_lstdel(&(*alst)->next, del);
-		ft_lstdelone(alst, del);
+		if (!(str = ft_strnew(ft_strlen((char *)s))))
+			return (NULL);
+		i = -1;
+		len = ft_strlen((char *)s);
+		while (++i < len)
+			str[i] = f(i, s[i]);
 	}
+	return (str);
 }
